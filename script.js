@@ -35,4 +35,7 @@ $(function() {
         console.log('TaggedImages:', taggedImages['animals']);
     });
     console.log('Number of total tags: ' + tags.length);
+
+    $('#buttons').append('<button> Tags (' + tags.length + ')</button>');
+
 });
