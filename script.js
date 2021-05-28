@@ -32,10 +32,15 @@ $(function() {
             taggedImages[item].push($img);
         });
 
-        console.log('TaggedImages:', taggedImages['animals']);
+        console.log('TaggedImages:', taggedImages);
     });
     console.log('Number of total tags: ' + tags.length);
 
+    // button showing the total number of tags
     $('#buttons').append('<button> Tags (' + tags.length + ')</button>');
 
+    // iterating through the taggedImages object to create a button for each existing tag
+    for (const tagName in taggedImages) {
+        
+    }
 });
