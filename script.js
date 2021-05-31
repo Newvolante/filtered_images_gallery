@@ -55,7 +55,6 @@ $(function() {
     })
 
     $('#showAll').on('click', function() {
-        console.log('test');
         $('img').hide().show();
     })
 });
