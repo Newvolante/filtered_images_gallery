@@ -42,11 +42,11 @@ $(function() {
     // iterating through the taggedImages object to create a button for each existing tag
     for (const tagName in taggedImages) {
         // console.log(tagName);
-        let $button = $('<button>' + tagName + '</button>');
+        let $button = $('<button class="tag">' + tagName + '</button>');
         $('#buttons').append($button);
     }
 
-    $('#buttons').on('click', 'button', function(e) {
+    $('#buttons').on('click', 'button.tag', function(e) {
         $('img').hide();
         $sortingtag = $(this).text();
         taggedImages[$sortingtag].forEach(item => {
