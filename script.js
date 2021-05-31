@@ -41,6 +41,8 @@ $(function() {
 
     // iterating through the taggedImages object to create a button for each existing tag
     for (const tagName in taggedImages) {
-        
+        // console.log(tagName);
+        let $button = $('<button>' + tagName + '</button>');
+        $('#buttons').append($button);
     }
 });
