@@ -45,4 +45,13 @@ $(function() {
         let $button = $('<button>' + tagName + '</button>');
         $('#buttons').append($button);
     }
+
+    $('#buttons').on('click', 'button', function(e) {
+        $('img').hide();
+        $sortingtag = $(this).text();
+        taggedImages[$sortingtag].forEach(item => {
+            item.show();
+        })
+    })
+
 });
